@@ -54,7 +54,7 @@ class Button3dState extends State<Button3d> {
             boxShadow: [BoxShadow(color: widget.style.backColor)]),
         child: ConstrainedBox(
           constraints: BoxConstraints.expand(
-              width: widget.width, height: widget.height - BUTTON_Z),
+              width: widget.width, height: widget.height - widget.style.z),
         ),
       ),
     );
