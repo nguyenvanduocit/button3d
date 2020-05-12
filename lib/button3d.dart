@@ -94,6 +94,11 @@ class Button3dState extends State<Button3d> {
           isTapped = true;
         });
       },
+      onTapCancel: (TapDownDetails event) {
+        setState(() {
+          isTapped = false;
+        });
+      },
       onTapUp: (TapUpDetails event) {
         setState(() {
           isTapped = false;
